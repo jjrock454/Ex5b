@@ -41,7 +41,10 @@
               }
 
 			  var { t1, u1 } = convertTemperature(parseFloat(t), u);
-			   
+
+			  $("#result").html("Temperature is " + t1.toFixed(2) + " in " + u1);
+			});
+
 				function validateTemperature(t) {
               if (isNaN(t)) {
                   alert("Please enter a valid number for temperature!");
@@ -70,8 +73,7 @@
               return { t1, u1 };
           }
 			   
-			   alert("Temperature is "+t1+" in "+u1);
-			});
+			
 		});
 	</script>
 </body>
